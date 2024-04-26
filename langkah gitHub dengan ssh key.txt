@@ -1,2 +1,87 @@
 langkah gitHub dengan ssh key
 
+Admin@gosmart MINGW64 ~/Documents/TEstpush gitHub
+$ git config --global user.email
+ΓÇ£yudi31mulya@gmail.comΓÇ¥
+
+Admin@gosmart MINGW64 ~/Documents/TEstpush gitHub
+$ git init
+Initialized empty Git repository in C:/Users/Admin/Documents/TEstpush gitHub/.git/
+
+Admin@gosmart MINGW64 ~/Documents/TEstpush gitHub (master)
+$ git add .
+
+Admin@gosmart MINGW64 ~/Documents/TEstpush gitHub (master)
+$ git commit -m "test"
+[master (root-commit) b0babcb] test
+ 1 file changed, 2 insertions(+)
+ create mode 100644 langkah gitHub dengan ssh key.txt
+
+Admin@gosmart MINGW64 ~/Documents/TEstpush gitHub (master)
+$ git remote add origin git@github.com:yudidoc31/flowGit.git
+git branch -M main
+git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 270 bytes | 90.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:yudidoc31/flowGit.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+Admin@gosmart MINGW64 ~/Documents/TEstpush gitHub (main)
+$ ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/Admin/.ssh/id_rsa): tester
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in tester
+Your public key has been saved in tester.pub
+The key fingerprint is:
+SHA256:W74jtkvCBJJU3ljelsXpMC3p8wp0KWaqEmQcUOyUYUk Admin@gosmart
+The key's randomart image is:
++---[RSA 3072]----+
+|o+E=. .  +..     |
+| +=o = .=o+      |
+|.o+ + o.+*       |
+| +.. .=.= .      |
+|o    =.oSo.      |
+|.   .o.  +.      |
+| . .  o.o..      |
+|. .    o+ ..     |
+| .     .o+..     |
++----[SHA256]-----+
+
+Admin@gosmart MINGW64 ~/Documents/TEstpush gitHub (main)
+$ eval "$(ssh-agent -s)"
+Agent pid 74
+
+=======Buat SSHkey DI github/copi file(nama keySSh.pub)==== ke New SSHkey di gitHub.
+
+Admin@gosmart MINGW64 ~/Documents/TEstpush gitHub (main)
+$ ssh-add tester((nama) keySSH.pub)
+Identity added: tester (Admin@gosmart)
+
+Admin@gosmart MINGW64 ~/Documents/TEstpush gitHub (main)
+$ git add .
+
+Admin@gosmart MINGW64 ~/Documents/TEstpush gitHub (main)
+$ git commit -m "1"
+[main 6b7d33a] 1
+ 1 file changed, 3 insertions(+)
+ create mode 100644 .gitignore
+
+Admin@gosmart MINGW64 ~/Documents/TEstpush gitHub (main)
+$ git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 314 bytes | 104.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:yudidoc31/flowGit.git
+   b0babcb..6b7d33a  main -> main
+branch 'main' set up to track 'origin/main'.
+
