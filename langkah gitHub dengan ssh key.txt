@@ -85,3 +85,25 @@ To github.com:yudidoc31/flowGit.git
    b0babcb..6b7d33a  main -> main
 branch 'main' set up to track 'origin/main'.
 
+            /////******\\\\\\\\
+============//*Melakukan update/perubahan logo <M color="oranye">
+Admin@gosmart MINGW64 ~/Documents/TEstpush gitHub (main)
+$ git add .
+
+Admin@gosmart MINGW64 ~/Documents/TEstpush gitHub (main)
+$ git commit -m "tambah1"
+[main 0bb787a] tambah1
+ 1 file changed, 85 insertions(+)
+
+Admin@gosmart MINGW64 ~/Documents/TEstpush gitHub (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.24 KiB | 637.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:yudidoc31/flowGit.git
+   6b7d33a..0bb787a  main -> main
+
